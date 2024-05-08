@@ -303,8 +303,11 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 4px 7px 10px black;
     width: 20rem;
-    height: 100vh;
+    height: 200vh;
     transition: 0.3s;
+  }
+  .navbars-link.active {
+    right: 0%;
   }
   .navbars-link a {
     padding: 0.5rem 0;
