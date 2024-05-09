@@ -462,6 +462,85 @@ body {
 }
 // Saver Session
 
+// Testimonials Session
+.testimonials {
+    padding: 4rem 7%;
+    display: flex;
+
+    &-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+
+        img {
+            width: 25rem;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    &-detail {
+        width: 50%;
+
+        h2 {
+            font-family: "DM Sans", sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--color-font-si);
+        }
+
+        p {
+            margin: 0 0 3rem;
+            padding: 1.5rem 0 0;
+            font-family: "DM Sans", sans-serif;
+            font-size: 1.15rem;
+            color: var(--icon-jb);
+        }
+
+        .atc {
+            padding: 1rem 2rem;
+            font-family: "DM Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 10px;
+            background-color: var(--primary);
+            color: var(--bg);
+            box-shadow: 0 10px 25px -10px rgba(245, 56, 56, 35);
+        }
+        
+        &-app {
+            margin: 4rem 0 0;
+            display: flex;
+            align-items: center;
+
+            &-device {
+                padding: .5rem 1.5rem;
+                display: flex;
+                align-items: center;
+                border-radius: 50px;
+                border: 1px solid var(--color-font-si);
+
+                i {
+                    margin: 0 .5rem 0 0;
+                    font-size: 1.2rem;
+                    color: var(--icon-jb);
+                }
+
+                &:first-child {
+                    margin: 0 4rem 0 0;
+                }
+
+                label {
+                    font-family: "DM Sans", sans-serif;
+                }
+            }
+        }
+    }
+}
+// Testimonials Session
+
 @media (max-width: 450px) {
     html {
         font-size: 55%;
@@ -788,4 +867,74 @@ body {
         }
     }
     // Saver Mobile Session
+
+    // Testimonials Mobile Session
+    .testimonials {
+        padding: 10rem 7%;
+        display: block;
+        justify-content: center;
+
+        &-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            img {
+                width: 35rem;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        
+        &-detail {
+            display: block;
+            width: 100%;
+            text-align: center;
+
+            h2 {
+                padding: 2rem 0 1.5rem;
+                font-size: 3.7rem;
+                font-weight: 500;
+            }
+
+            p {
+                padding: 1rem 0 2rem;
+                font-size: 1.7rem;
+                text-align: left;
+            }
+
+            .atc {
+                padding: 1.5rem 7rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            &-app {
+                padding: 1rem 18% 0;
+                display: block;
+
+                &-device {
+                    margin: 3rem 0 1rem;
+                    justify-content: center;
+                    width: 100%;
+                    box-sizing: border-box;
+
+                    &:first-child {
+                        margin: 1rem 0 3rem;
+                    }
+                    
+                    i {
+                        margin: 0 1rem 0 0;
+                        font-size: 2rem;
+                    }
+
+                    label {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    // Testimonials Mobile Session
 }
