@@ -678,10 +678,10 @@ body {
             display: block;
             top: 7.4rem;
             right: -100%;
-            font-size: 1.2rem;
-            background-color: rgba(255, 255, 255, 0.7);
+            font-size: 1.8rem;
+            background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 4px 7px 10px black;
-            width: 20rem;
+            width: 25rem;
             height: 200vh;
             transition: 0.3s;
 
@@ -690,7 +690,7 @@ body {
             }
 
             a {
-                padding: .5rem 0;
+                padding: 1rem 0;
                 display: flex;
 
                 &:first-child {
@@ -705,7 +705,7 @@ body {
 
                 a {
                     margin: 0;
-                    padding: .5rem 0;
+                    padding: 1rem 0;
                     display: flex;
                 }
             }

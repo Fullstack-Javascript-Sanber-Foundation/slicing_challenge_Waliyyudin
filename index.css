@@ -564,10 +564,10 @@ body {
     display: block;
     top: 7.4rem;
     right: -100%;
-    font-size: 1.2rem;
-    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 1.8rem;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 4px 7px 10px black;
-    width: 20rem;
+    width: 25rem;
     height: 200vh;
     transition: 0.3s;
   }
@@ -575,7 +575,7 @@ body {
     right: 0%;
   }
   .navbars-link a {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     display: flex;
   }
   .navbars-link a:first-child {
@@ -588,7 +588,7 @@ body {
   }
   .navbars-link-extra a {
     margin: 0;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     display: flex;
   }
   .navbars-extra a {
