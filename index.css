@@ -2,6 +2,7 @@
   --bg: #FFFFFF;
   --bg-card: #F7F7F7;
   --bg-span: #2469B2;
+  --bg-span2: #FEE9E9;
   --bg-footer: #F8F8F8;
   --primary: #F53838;
   --color-font: #4F5665;
@@ -289,6 +290,60 @@ body {
   color: var(--color-font-scrt-ttl);
 }
 
+.invest {
+  padding: 1rem 7%;
+  display: flex;
+}
+.invest-img {
+  margin: 0 2rem 0 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.invest-img img {
+  width: 100%;
+  height: 30rem;
+  object-fit: contain;
+}
+.invest-detail {
+  width: 100%;
+}
+.invest-detail span {
+  padding: 0.5rem 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: var(--bg-span2);
+  color: var(--primary);
+}
+.invest-detail h2 {
+  padding: 2rem 0 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: var(--color-font-scrt-ttl);
+}
+.invest-detail p {
+  padding: 0 0 3rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+}
+.invest-detail a {
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+.invest-detail a i {
+  margin: 0 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 55%;
@@ -480,6 +535,42 @@ body {
     font-size: 2rem;
     font-weight: 600;
     color: var(--color-font-scrt-ttl);
+  }
+  .invest {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .invest-img {
+    margin: 0 0 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .invest-img img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .invest-detail {
+    padding: 2rem 0;
+  }
+  .invest-detail span {
+    font-size: 1.3rem;
+  }
+  .invest-detail h2 {
+    padding: 2rem 0;
+    font-size: 4rem;
+    color: var(--color-font-scrt-ttl);
+  }
+  .invest-detail p {
+    font-size: 1.7rem;
+  }
+  .invest-detail a {
+    font-size: 1.7rem;
   }
 }
 
