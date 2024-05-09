@@ -6,6 +6,7 @@
   --bg-footer: #F8F8F8;
   --primary: #F53838;
   --color-font: #4F5665;
+  --color-font-ftr: #AFB5C0;
   --color-font-si: #0B132A;
   --color-font-scrt: #ABABAC;
   --color-font-scrt-ttl: #080047;
@@ -474,10 +475,83 @@ body {
 }
 
 .footers {
-  padding: 2rem 7%;
+  padding: 4rem 7%;
+  display: flex;
+  background-color: var(--bg-footer);
+}
+.footers-about {
+  padding: 0 20% 0 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.footers-about-img {
+  padding: 0 0 2rem;
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  box-sizing: border-box;
+}
+.footers-about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footers-about p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: var(--color-font);
+}
+.footers-about p span {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footers-about .sosmed {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+.footers-about .sosmed a {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 100%;
+  font-size: 1.2rem;
+  background-color: var(--bg);
+  color: var(--primary);
+  box-shadow: 0 10px 25px -10px var(--icon-jb);
+}
+.footers-about .copyright {
+  font-size: 1rem;
+  color: var(--color-font-ftr);
+}
+.footers-about .copyright b {
+  font-family: "Rubik", sans-serif;
+}
+.footers-link {
+  margin: 0 0.5rem;
   display: flex;
   justify-content: space-between;
-  background-color: var(--bg-footer);
+  width: 100%;
+}
+.footers-link-session .ttl {
+  padding: 0 0 2rem;
+}
+.footers-link-session .ttl h3 {
+  font-family: "Rubik", sans-serif;
+  color: var(--icon-jb);
+}
+.footers-link-session li {
+  margin: 1rem 0;
+}
+.footers-link-session li:first-child {
+  margin: 0;
+}
+.footers-link-session li a {
+  font-family: "Rubik", sans-serif;
+  color: var(--color-font-si);
+}
+.footers-about-mobile {
+  display: none;
 }
 
 @media (max-width: 450px) {
@@ -709,6 +783,7 @@ body {
     font-size: 1.7rem;
   }
   .saver {
+    margin: 0 7%;
     display: block;
   }
   .saver-detail {
@@ -791,6 +866,54 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
+  }
+  .footers {
+    display: block;
+  }
+  .footers-about {
+    display: none;
+  }
+  .footers-link {
+    display: block;
+    width: 100%;
+  }
+  .footers-link-session {
+    padding: 2rem 0;
+  }
+  .footers-link-session .ttl {
+    font-size: 1.7rem;
+  }
+  .footers-link-session li a {
+    font-size: 1.7rem;
+  }
+  .footers-about-mobile {
+    padding: 4rem 0 0;
+    display: block;
+    width: 100%;
+  }
+  .footers-about-mobile-img {
+    width: 100%;
+  }
+  .footers-about-mobile-img img {
+    width: 20rem;
+  }
+  .footers-about-mobile p {
+    font-size: 1.7rem;
+  }
+  .footers-about-mobile p span {
+    font-size: 1.7rem;
+  }
+  .footers-about-mobile .sosmed {
+    padding: 4rem 0 3rem;
+  }
+  .footers-about-mobile .sosmed a {
+    font-size: 2rem;
+  }
+  .footers-about-mobile .copyright {
+    font-size: 1.7rem;
+  }
+  .footers-about-mobile .copyright span {
+    font-size: 1.7rem;
   }
 }
 
